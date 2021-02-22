@@ -1,0 +1,16 @@
+[ 
+        {
+            "nickname":"ismael",
+            "password":"contraseña",
+            "image":"pepe.png",
+            "name":"primerT"
+        }
+,
+        {
+            "nickname":"roberto",
+            "password":"caja",
+            "image":"pepe.png",
+            "name":"primerT"
+        }
+  
+]
