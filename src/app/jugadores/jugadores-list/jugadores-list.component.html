@@ -1,4 +1,4 @@
 <ul>
-
-    <app-jugadores-item [jugador]="jugador" *ngFor="let jugador of jugadores"></app-jugadores-item>
+    <input type="text" name="buscarJugador" id="buscarJugador" [(ngModel)]="criterio"/>
+    <app-jugadores-item [jugador]="jugador" *ngFor="let jugador of jugadores | filtrarJugadores:criterio"></app-jugadores-item>
 </ul>

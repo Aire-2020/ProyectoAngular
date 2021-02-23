@@ -8,9 +8,8 @@ import { JugadoresService } from '../jugadores.service';
 })
 export class JugadoresListComponent implements OnInit {
 
-  jugadores: Jugador[] = [
-
-  ];
+  jugadores: Jugador[];
+  criterio: string;
   constructor(private jugserv: JugadoresService) { }
 
   ngOnInit(): void {

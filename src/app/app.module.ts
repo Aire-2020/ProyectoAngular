@@ -10,6 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 import { JugadoresService } from './jugadores/jugadores.service';
 import { HttpClientModule } from '@angular/common/http';
 import { JugadoresDetallesComponent } from './jugadores/jugadores-detalles/jugadores-detalles.component';
+import { FiltrarJugadoresPipe } from './jugadores/filtrar-jugadores.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { JugadoresDetallesComponent } from './jugadores/jugadores-detalles/jugad
     JugadoresListComponent,
     JugadoresItemComponent,
     HomeComponent,
-    JugadoresDetallesComponent
+    JugadoresDetallesComponent,
+    FiltrarJugadoresPipe
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [JugadoresService],
   bootstrap: [AppComponent]

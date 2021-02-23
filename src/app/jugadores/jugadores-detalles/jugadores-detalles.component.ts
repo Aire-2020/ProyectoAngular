@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Jugador } from '../jugador';
+import { JugadoresService } from '../jugadores.service';
 
 @Component({
   selector: 'app-jugadores-detalles',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JugadoresDetallesComponent implements OnInit {
 
-  constructor() { }
+jugador: Jugador;
+
+  constructor(private activatedRoute: ActivatedRoute,
+    private jugSer: JugadoresService) { }
 
   ngOnInit(): void {
+    this.activatedRoute.params.subscribe(j =>{
+     this.jugSer.getJugador(j.id).subscribe(j => this.jugador = j)}
+    )
   }
 
 }

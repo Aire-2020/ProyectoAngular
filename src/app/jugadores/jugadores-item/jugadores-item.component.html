@@ -1,5 +1,5 @@
 <li>
 
-{{jugador.nombre}} : {{jugador.apellido}} : {{jugador.puntuacion}}
-
+{{jugador.id}}: {{jugador.nombre}} : {{jugador.apellido}} : {{jugador.puntuacion}}
+<a [routerLink]="['/jugador',jugador.id]">Detalles</a>
 </li>
