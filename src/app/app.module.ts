@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { JugadoresDetallesComponent } from './jugadores/jugadores-detalles/jugadores-detalles.component';
 import { FiltrarJugadoresPipe } from './jugadores/filtrar-jugadores.pipe';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     JugadoresItemComponent,
     HomeComponent,
     JugadoresDetallesComponent,
-    FiltrarJugadoresPipe
+    FiltrarJugadoresPipe,
+    LoginComponent
     
   ],
   imports: [

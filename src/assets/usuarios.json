@@ -1,16 +1,5 @@
-[ 
+
         {
             "nickname":"ismael",
-            "password":"contraseña",
-            "image":"pepe.png",
-            "name":"primerT"
+            "token":"contraseña"
         }
-,
-        {
-            "nickname":"roberto",
-            "password":"caja",
-            "image":"pepe.png",
-            "name":"primerT"
-        }
-  
-]
