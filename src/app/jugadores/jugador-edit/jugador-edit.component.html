@@ -1,0 +1,50 @@
+<div class="card">
+    <div class="card-header bg-success text-white">Editar jugador</div>
+    <div class="card-body">
+      <div>
+        <form #jugadorForm="ngForm" (ngSubmit)="editar()" novalidate>
+            <input type="text" class="form-control"
+            name="identificador"
+            id="identificador"
+            [(ngModel)]="jugador.id"
+            #inputId = "ngModel"
+            required
+            minlength="1"
+            [ngClass]="{
+                'is-valid': inputId.touched && inputId.valid,
+                'is-invalid': inputId.touched && !inputId.valid
+              }">
+          <input type="text" name="name" class="form-control" [(ngModel)]="jugador.nombre"
+          minlength="1" maxlength="60" required  #nameModel="ngModel"
+          [ngClass]="{
+            'is-valid': nameModel.touched && nameModel.valid,
+            'is-invalid': nameModel.touched && !nameModel.valid
+          }"/>
+
+          <input type="text" name="apellido" class="form-control" [(ngModel)]="jugador.apellido"
+          minlength="1" maxlength="60" required  #nameModel="ngModel"
+          [ngClass]="{
+            'is-valid': nameModel.touched && nameModel.valid,
+            'is-invalid': nameModel.touched && !nameModel.valid
+          }"/>
+          <div *ngIf="nameModel.touched && nameModel.invalid"
+          class="alert alert-danger">
+          Nombre requerido (entre 1 y 60 caracteres)</div>
+          <input type="number" name="price" class="form-control" [(ngModel)]="jugador.puntuacion"
+          required  #priceModel="ngModel"
+          appMinPuntuacion="30"
+          #inputPunt = "ngModel"
+          [ngClass]="{
+            'is-valid': inputPunt.touched && inputPunt.valid,
+            'is-invalid': inputPunt.touched && !inputPunt.valid
+          }"/>
+          <div class="col-12">
+              <div *ngIf="inputId.touched && inputId.invalid"
+              class="alert alert-danger">Id requerido</div>
+        <button type="submit" 
+        [disabled]="jugadorForm.invalid"
+        class="btn btn-primary">Editar</button>
+          </div>
+        </form>
+      </div>
+  

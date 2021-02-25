@@ -22,4 +22,9 @@ export class JugadoresService {
         map(response => response.jugadores.filter(j => j.id === id)[0]),
         );
 }
+editJugador(jug: Jugador): Observable<Jugador>{
+const headers = {'content-type': 'application/json'}
+const body = JSON.stringify(jug);
+return this.http.put<Jugador>(this.urlJug,{'headers':headers});
+}
 }

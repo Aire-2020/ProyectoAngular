@@ -1,0 +1,46 @@
+
+<div class="container">
+<h1>New Product</h1>
+<form (ngSubmit)="crearFormulario()" [formGroup]="jugadorForm">
+  <div class="row mb-3">
+    <label for="id" class="col-sm-2 col-form-label">Identificador</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="id"
+      name="Identificador"
+      formControlName="id"
+      [ngClass]="{'is-valid' : idValido, 'is-invalid' : idValido==false}">
+      <div *ngIf="idValido==false"
+              class="alert alert-danger">Id requerido</div>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="nombre"
+      name="nombre"
+      formControlName="nombre">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="apellido" class="col-sm-2 col-form-label">Apellido</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="apellido"
+      name="apellido"
+      formControlName="apellido">
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label for="puntuacion" class="col-sm-2 col-form-label">Puntuacion</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="puntuacion"
+      name="puntuacion"
+      formControlName="puntuacion"
+      [ngClass]="{'is-valid' : puntValido, 'is-invalid' : puntValido==false}">
+      <div *ngIf="puntValido==false"
+              class="alert alert-danger">Puntuacion no válida</div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Create</button>
+</form>
+</div>

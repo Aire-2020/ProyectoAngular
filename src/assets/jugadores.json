@@ -3,55 +3,61 @@
         "id":"1",
         "nombre":"Ismael",
         "apellido":"Romero",
-        "puntuacion":30
+        "puntuacion":30,
+        "imagen": "/assets/img/desconocido.png"
     }
     ,
     {
         "id":"2",
         "nombre":"Paco",
         "apellido":"Juan",
-        "puntuacion":50
+        "puntuacion":50,
+        "imagen": "/assets/img/desconocido.png"
     }
     ,
     {
         "id":"3",
         "nombre":"Filiberto",
         "apellido":"Elpico",
-        "puntuacion":1000
+        "puntuacion":1000,"imagen": "/assets/img/desconocido.png"
     }
     ,
     {
         "id":"4",
         "nombre":"Macaco",
         "apellido":"Gilberto",
-        "puntuacion":10
+        "puntuacion":10,"imagen": "/assets/img/desconocido.png"
     }
     ,
     {
         "id":"5",
         "nombre":"Juan",
         "apellido":"Carlos",
-        "puntuacion":150
+        "puntuacion":150,
+        "imagen": "/assets/img/desconocido.png"
     }
     ,
     {
         "id":"6",
         "nombre":"Paco",
         "apellido":"Sanchez",
-        "puntuacion":40
+        "puntuacion":40,
+        "imagen": "/assets/img/desconocido.png"
     }
     ,
     {
         "id":"7",
         "nombre":"Peligro",
         "apellido":"Cuidado",
-        "puntuacion":23
+        "puntuacion":23,
+        "imagen": "/assets/img/desconocido.png"
     }
     ,
     {
         "id":"8",
         "nombre":"Juan",
         "apellido":"Alberto",
-        "puntuacion":1700
+        "puntuacion":1700,
+        "imagen": "/assets/img/desconocido.png"
     }
 ]}
