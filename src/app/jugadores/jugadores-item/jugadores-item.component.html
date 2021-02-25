@@ -1,7 +1,9 @@
-<li appMostrarMas [elementoMostrar]="mostrar" style="width: 300px;">
+<li appMostrarMas [elementoMostrar]="mostrar" class="jugador">
 
 <img #mostrar [src]="jugador.imagen" width="50" height="50" style="display:none">
-{{jugador.id}}: {{jugador.nombre}} : {{jugador.apellido}} : {{jugador.puntuacion}}
-<a [routerLink]="['/jugador',jugador.id]">Detalles</a>
-<a [routerLink]="['/jugador/edit',jugador.id]">Editar</a>
+<p>{{jugador.id}}: {{jugador.nombre}} : {{jugador.apellido}} : {{jugador.puntuacion}}</p>
+
+<button [routerLink]="['/jugador',jugador.id]" type="button" class="btn btn-info">Detalles</button>
+
+<button [routerLink]="['/jugador/edit',jugador.id]" type="button" class="btn btn-secondary">Editar</button>
 </li>

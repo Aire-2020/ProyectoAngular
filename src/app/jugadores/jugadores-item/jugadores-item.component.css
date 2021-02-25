@@ -1,0 +1,11 @@
+.jugador{
+    font-size: 1.2em;
+    padding: .5em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+}
+
+.jugador button{
+    margin-left:10px;
+}

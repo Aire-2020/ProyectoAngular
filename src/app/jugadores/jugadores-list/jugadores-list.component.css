@@ -1,0 +1,9 @@
+.lista{
+
+    width: 33%;
+    margin-left: auto;
+    margin-right:auto;
+    display:flex;
+    flex-direction: column;
+    
+}
